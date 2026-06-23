@@ -1,0 +1,62 @@
+# Thought Process Sheet - QueueCure
+
+## Problem Understanding
+
+Clinics use manual token systems which cause long waiting times.
+Patients don't know their queue position and receptionists manage everything manually.
+
+## Solution Approach
+
+QueueCure is a real-time digital queue management system.
+
+It has two main views:
+
+1. Receptionist Dashboard
+- Add patient
+- Generate token
+- Call next patient
+- Clear queue
+
+2. Patient Waiting Room
+- Show current token
+- Show patient's token
+- Calculate estimated waiting time
+
+## Technology Choice
+
+Frontend:
+React.js + Vite
+
+Backend:
+Node.js + Express.js
+
+Database:
+MongoDB
+
+Real-time Communication:
+Socket.io
+
+
+## Real Time Flow
+
+1. Patient joins queue
+2. Backend creates token
+3. Receptionist clicks Call Next
+4. Server emits Socket.io event
+5. Waiting room updates instantly
+
+
+## Edge Cases Considered
+
+- Empty queue handling
+- Multiple patients joining
+- Token order maintenance
+- Avoiding page refresh for updates
+
+
+## Future Improvements
+
+- Doctor dashboard
+- Multiple clinic support
+- SMS notification
+- Appointment booking
