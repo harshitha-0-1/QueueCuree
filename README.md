@@ -1,34 +1,51 @@
-# QueueCure 🏥
+# QueueCure
 
-QueueCure is a real-time hospital queue management system that helps patients and reception staff manage waiting queues efficiently.
+## Project Description
+
+QueueCure is a full stack queue management system for clinics.
+
+## Problem Statement
+
+Many clinics use manual token systems which create long waiting times.
+Patients don't know their turn status and receptionists manage queues manually.
+
+QueueCure provides a digital queue system with real-time updates.
 
 ## Features
 
-- Patient can join the queue
-- Automatic token number generation
-- Reception dashboard
+- Receptionist dashboard
 - Add patients
+- Generate tokens
 - Call next patient
 - Patient waiting room
-- Live queue updates using Socket.IO
-- Clear queue option
-- Real-time communication
+- Live queue updates using Socket.io
+- Estimated waiting time
 
 ## Tech Stack
 
-### Frontend
+Frontend:
 - React.js
 - Vite
-- CSS
 
-### Backend
+Backend:
 - Node.js
 - Express.js
 
-### Database
-- MongoDB Atlas
+Database:
+- MongoDB
 
-### Real-Time
-- Socket.IO
+Real Time:
+- Socket.io
 
-## Project Structure
+## How to Run
+
+Backend:
+cd backend
+npm install
+npm start
+
+
+Frontend:
+cd frontend
+npm install
+npm run dev
