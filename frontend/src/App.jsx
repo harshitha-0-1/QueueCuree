@@ -13,11 +13,13 @@ return (
 
 <Routes>
 
+<Route path="/" element={<Reception/>}/>
+
 <Route path="/reception" element={<Reception/>}/>
 
-<Route path="/waiting" element={<WaitingRoom/>}/>
-
 <Route path="/patient" element={<Patient/>}/>
+
+<Route path="/waitingroom" element={<WaitingRoom/>}/>
 
 </Routes>
 
