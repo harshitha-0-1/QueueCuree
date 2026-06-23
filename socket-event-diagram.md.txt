@@ -1,0 +1,41 @@
+# Socket.io Event Flow Diagram
+
+## Queue Update Flow
+
+
+Receptionist Dashboard
+        |
+        |
+        | Click "Call Next"
+        |
+        ↓
+
+Backend Server (Node + Express + Socket.io)
+        |
+        |
+        | Emits event:
+        | queueUpdate
+        |
+        ↓
+
+Patient Waiting Room
+        |
+        |
+        | Updates current token
+        | Refreshes queue data
+
+
+## Events
+
+Event Name:
+queueUpdate
+
+Data Sent:
+{
+  token: currentToken
+}
+
+
+Purpose:
+To update patient waiting room instantly
+without refreshing the page.
